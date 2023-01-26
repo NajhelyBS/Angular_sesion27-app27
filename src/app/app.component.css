@@ -1,0 +1,63 @@
+#contenedor1 {
+    background-image: url("https://wallpaperaccess.com/full/3514950.jpg");
+    border-bottom: solid 3px ;
+   
+}
+h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    background: url("https://media.istockphoto.com/id/1334530660/es/foto/f%C3%B3rmulas-y-c%C3%A1lculos-de-matem%C3%A1ticas-y-geometr%C3%ADa-en-la-pizarra-de-la-escuela.jpg?b=1&s=170667a&w=0&k=20&c=mhbl1Rz2306ONpe91vwlf5fFOfCDDddCZ6puhMCO4iY=") no-repeat scroll;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+
+
+}
+label {
+    -webkit-text-stroke: medium;
+    text-shadow: rgb(255, 255, 255) 2px 3px 3px;
+}
+#number1 {
+    height: 100px;
+
+}
+
+#num1 {
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
+    margin-top: 5px;
+}
+
+#number2{
+    height: 100px;
+}
+
+#num2 {
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: rgb(78, 78, 87);
+    height: 40px;
+    width: 150px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    box-shadow: rgba(102, 99, 99, 0.685) 0px 0px 5px 2px;
+}
+
+.rpta {
+    height: 100px;
+    border-top: dashed 3px ;
+    border-right: dashed 3px ;
+    background-image: url("https://wallpaperaccess.com/full/3514950.jpg");
+
+}
