@@ -1,23 +1,57 @@
+main {
+    border: solid 4px black;
+    padding: 3em;
+    padding-bottom: 4em;
+    height: auto;
+    background-image: url(https://cutewallpaper.org/cdn-cgi/mirage/dd19f2d06ebc24f541f142b37b4289ffa7de722a7607e39984c5c6dd4ce8defd/1280/21/pixel-wallpaper-1920x1080/Wallpaper-Pixel-Size-Free-Stock-Wallpapers-on-ecopetit.cat.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title {
+    width: 10em;
+}
+
 #contenedor1 {
-    background-image: url("https://wallpaperaccess.com/full/3514950.jpg");
+    background-color:#eb82519f;
     border-bottom: solid 3px ;
    
 }
+
+form {
+    width: 28em;
+    border: dashed #21244D 4px;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #b460687c;
+
+}
+
+select {
+    width: 100%;
+    color: #EB8151;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color:#21244D;
+    font-weight: 800;
+    background-color: #604970;
+}
+
+select:hover {
+    transform: scale(1.05);
+}
 h1 {
+
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 3rem;
-    background: url("https://media.istockphoto.com/id/1334530660/es/foto/f%C3%B3rmulas-y-c%C3%A1lculos-de-matem%C3%A1ticas-y-geometr%C3%ADa-en-la-pizarra-de-la-escuela.jpg?b=1&s=170667a&w=0&k=20&c=mhbl1Rz2306ONpe91vwlf5fFOfCDDddCZ6puhMCO4iY=") no-repeat scroll;
-    background-size: cover;
-    background-clip: text;
-    color: transparent;
-
+    color: #21244D;
 
 }
 label {
-    -webkit-text-stroke: medium;
-    text-shadow: rgb(255, 255, 255) 2px 3px 3px;
+    color: white;
+    -webkit-text-stroke: 0.3px;
+    text-shadow: #EB8151 2px 3px 3px;
 }
 #number1 {
     height: 100px;
@@ -25,10 +59,10 @@ label {
 }
 
 #num1 {
-    background: #ADA996;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
+    background: #ff5f6cb4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc471a6, #ff5f6cad);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc471af, #ff5f6cab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
     margin-top: 5px;
 }
 
@@ -37,10 +71,10 @@ label {
 }
 
 #num2 {
-    background: #ADA996;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
+    background: #ff5f6cb4;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc471ab, #ff5f6cb4);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc47196, #ff5f6ca4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ box-shadow: rgba(0, 0, 0, 0.685) 0px 0px 5px 2px;
     margin-top: 5px;
 }
 
@@ -54,10 +88,14 @@ button {
     box-shadow: rgba(102, 99, 99, 0.685) 0px 0px 5px 2px;
 }
 
-.rpta {
-    height: 100px;
-    border-top: dashed 3px ;
-    border-right: dashed 3px ;
-    background-image: url("https://wallpaperaccess.com/full/3514950.jpg");
+#resultado {
+    border: solid #271B3E 3px;
+}
 
+.rpta {
+    font-size:26px;
+    color: #271B3E ;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color:#EB8151;
+    font-weight: 800;
 }

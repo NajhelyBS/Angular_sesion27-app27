@@ -1,46 +1,52 @@
-<main>
-  <div class="container-fluid">
+<main >
+  <div id="title" class="container-fluid d-flex justify-content-center">
       <div class="row" >
-      <div class="col-md-12" id="contenedor1">
-          <h1>Calculadora</h1>
+      <div class="col-md-12 rounded" id="contenedor1" >
+          <h1 class="text-center">Calculadora </h1>
       </div>
 
-      <div class="col-md-6" id="number1">
+<div class="d-flex justify-content-center">
+<form class="mt-3 py-2  rounded">
+      <div class="col-md-12" id="number1">
       <label for="" class="form-label mt-2" >Ingresa Número 1</label>
-      <input type="number" class="form-control" name="" id="num1">
+      <input type="number" class="form-control" id="num1" #num1  >
   </div>
-      <div class="col-md-6" id="number2">
+      <div class="col-md-12" id="number2">
       <label for="" class="form-label mt-2">Ingresa Número 2</label>
-      <input type="number" class="form-control" name="" id="num2"> 
+      <input type="number" class="form-control" id="num2"  #num2  > 
+  </div>
+  
+
+  <div class="col-md-12 text-center mt-4" >
+    <select name="operaciones" id="opciones" class="form-select"
+    (change)="Calcular()" >
+      <option selected>Elija una opción</option>
+      <option value="1" >Sumar</option>
+      <option value="2">Restar</option>
+      <option value="3">Multiplicar</option>
+      <option value="4">Dividir</option>
+    </select>
+
+  <div class="col-md-12 text-center mt-4 rounded"  [ngSwitch] = "operacion" id="resultado">
+      <p class="rpta" *ngSwitchCase="1">Resultado: <span [ngStyle]="{'color':'blue'}">{{suma}}</span></p>
+      <p class="rpta" *ngSwitchCase="2">Resultado: <span [ngStyle]="{'color':'green'}">{{resta}}</span></p>
+      <p class="rpta" *ngSwitchCase="3">Resultado: <span [ngStyle]="{'color':'purple'}">{{multiplicacion}}</span></p>
+      <p class="rpta" *ngSwitchCase="4">Resultado: <span [ngStyle]="{'color':'orange'}">{{division}}</span></p>
+      <ng-template  >
+      <p class="rpta" 
+      *ngSwitchDefault="5" >Resultado: <span [ngStyle]="{'color':'red'}">{{none}}</span>
+      </p></ng-template>
   </div>
 
-  <div class="col-md-12 text-center" id="boton">
-      <button type="button" class="btn"(click)="Calcular()">Calcular</button>
   </div>
-
-  <hr class="mt-3">
-
-  <div class="col-md-3 rpta" id="suma">
-      <label for="" class="form-label mt-2">SUMA</label>
-      <input type="number" class="form-control" name="" value="{{suma}}" readonly>
-  </div>
-
-  <div class="col-md-3 rpta" id="resta">
-      <label for="" class="form-label mt-2">RESTA</label>
-      <input type="number" class="form-control" name="" value="{{resta}}" readonly>
-  </div>
-
-  <div class="col-md-3 rpta" id="multiplicacion">
-      <label for="" class="form-label mt-2">MULTIPLICACIÓN</label>
-      <input type="number" class="form-control" name="" value="{{multiplicacion}}" readonly>
-  </div>
-
-  <div class="col-md-3 rpta" id="division">
-      <label for="" class="form-label mt-2">DIVISIÓN</label>
-      <input type="number" class="form-control" name="" value="{{division}}" readonly>
-  </div>
+</form></div>
 
       </div>
   
+  </div>
+
+
+  <div>
+    <span>{{title}} app is running!</span>
   </div>
 </main>
